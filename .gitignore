@@ -1,4 +1,3 @@
 api/node_modules
 services/user/node_modules
-services/message/node_modules
-services/actions/node_modules
+services/node_modules
