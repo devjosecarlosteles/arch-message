@@ -11,6 +11,11 @@ async function connect() {
     
     console.log("conectou com o MySQL!")
     global.connection = connection
+
+    setTimeout(() => {
+      connection.end()
+    }, 1000)
+
     return connection
 } 
 

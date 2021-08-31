@@ -1,12 +1,7 @@
 const express = require("express")
+const controller = require("./controller")
 
 const app = express()
 
-app.get("/user", (req, res) => {
-  // call mircro service
-  return res.json({
-    ok: true
-  })
-})
-
+app.get("/user", controller.user)
 app.listen(3333)
