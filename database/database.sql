@@ -24,9 +24,9 @@ DROP TABLE IF EXISTS `actions`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `actions` (
   `id` bigint NOT NULL,
-  `like` bit(1) DEFAULT NULL,
-  `unlike` bit(1) DEFAULT NULL,
-  `message_id` bit(1) DEFAULT NULL,
+  `likeC` int DEFAULT NULL,
+  `unlikeC` int DEFAULT NULL,
+  `message_id_` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -88,7 +88,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (9990,'Aline Queiros Ramos'),(34579,'Pedro Nunes'),(38484,'Luiza Fagundes'),(89689,'Ricardo Lopes'),(89798,'José Carlos Teles'),(90765,'Eduarda da Silva'),(97563,'Pedro Antony'),(99539,'Ulices da Silva Medeiros'),(646498,'Mirella Alves Moura'),(928844,'Gabriel Medeiros');
+INSERT INTO `user` VALUES (9990,'Sabrina Pereria'),(34579,'Pedro Nunes'),(38484,'Luiza Fagundes'),(89689,'Ricardo Lopes'),(89798,'José Carlos Teles'),(90765,'Eduarda da Silva'),(97563,'Pedro Antony'),(99539,'Ulices da Silva Medeiros'),(646498,'Mirella Alves Moura'),(928844,'Gabriel Medeiros');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -109,4 +109,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-28 23:05:11
+-- Dump completed on 2021-08-31 12:18:19
